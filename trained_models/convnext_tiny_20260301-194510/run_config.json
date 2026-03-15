@@ -1,0 +1,170 @@
+{
+  "run": {
+    "run_id": "convnext_tiny_20260301-194510",
+    "model_name": "convnext_tiny",
+    "started_at_utc": "2026-03-01T19:45:10.795371+00:00",
+    "finished_at_utc": "2026-03-01T20:32:56.378190+00:00",
+    "duration_seconds": 2865.583
+  },
+  "paths": {
+    "run_output_dir": "C:\\Users\\Lanxe\\OneDrive\\Master MINDS M1\\Machine Learning Computer Vision\\ms-coco\\trained_models\\convnext_tiny_20260301-194510",
+    "run_checkpoint_path": "C:\\Users\\Lanxe\\OneDrive\\Master MINDS M1\\Machine Learning Computer Vision\\ms-coco\\trained_models\\convnext_tiny_20260301-194510\\best_model.pt",
+    "run_confusion_matrix_path": "C:\\Users\\Lanxe\\OneDrive\\Master MINDS M1\\Machine Learning Computer Vision\\ms-coco\\trained_models\\convnext_tiny_20260301-194510\\confusion_matrix.png",
+    "active_checkpoint_path": "C:\\Users\\Lanxe\\OneDrive\\Master MINDS M1\\Machine Learning Computer Vision\\ms-coco\\trained_models\\best_model.pt"
+  },
+  "configuration": {
+    "num_classes": 80,
+    "epochs": 14,
+    "train_batch_size_frozen": 32,
+    "train_batch_size_unfrozen": 16,
+    "val_batch_size": 32,
+    "grad_accum_steps_frozen": 1,
+    "grad_accum_steps_unfrozen": 1,
+    "effective_batch_frozen": 32,
+    "effective_batch_unfrozen": 16,
+    "use_amp": true,
+    "amp_dtype": "torch.float16",
+    "freeze_backbone_at_start": true,
+    "unfreeze_backbone_epoch": 5,
+    "unfreeze_last_n_backbone_layers": null,
+    "use_differential_lr": true,
+    "learning_rate": null,
+    "backbone_base_lr": 1e-05,
+    "head_base_lr": 0.0001,
+    "lr_milestones": [
+      5,
+      10
+    ],
+    "lr_decay_factor": 0.01,
+    "val_split": 0.05,
+    "seed": 42,
+    "num_workers": 10,
+    "th_multi_label_initial": 0.5,
+    "threshold_candidates": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95
+    ],
+    "train_metrics_every_n_epochs": 1,
+    "val_every_n_epochs": 1,
+    "early_stopping_enabled": true,
+    "early_stopping_patience": 4,
+    "early_stopping_min_delta": 0.0,
+    "use_tensorboard": true,
+    "training_plan_token": "uf5-frz1-blr0p000010-hlr0p000100-ulall-bs32to16-ga1to1-amp1-ms5-10",
+    "batch_size_token": "32to16"
+  },
+  "dataset": {
+    "full_dataset_size": 65000,
+    "train_size": 61750,
+    "val_size": 3250,
+    "train_images_dir": "C:\\Users\\Lanxe\\ms-coco\\ms-coco-dataset\\images\\train-resized",
+    "train_labels_dir": "C:\\Users\\Lanxe\\ms-coco\\ms-coco-dataset\\labels\\train"
+  },
+  "results": {
+    "best_epoch": 5,
+    "total_epochs": 14,
+    "best_val_f1": 0.6033016443252563,
+    "best_val_loss": 0.5409806479307322,
+    "best_val_accuracy": 0.4589870572090149,
+    "best_val_precision": 0.5458104610443115,
+    "best_val_recall": 0.6743301153182983,
+    "best_threshold": 0.95,
+    "selected_train_f1_eval": 0.6275622248649597,
+    "last_train_f1": 0.6275622248649597,
+    "last_val_f1": 0.6025508046150208,
+    "completed_epochs": 9,
+    "early_stopped": true,
+    "early_stop_reason": "validation F1 did not improve by > 0.0 for 4 validation checks"
+  },
+  "artifacts": {
+    "checkpoint_file": "best_model.pt",
+    "config_file": "run_config.json",
+    "confusion_matrix_file": "confusion_matrix.png",
+    "confusion_matrix_generated": true,
+    "confusion_matrix_exists": true,
+    "confusion_matrix_batch_summary": {
+      "runs_root": "C:\\Users\\Lanxe\\OneDrive\\Master MINDS M1\\Machine Learning Computer Vision\\ms-coco\\trained_models",
+      "total_runs": 5,
+      "generated": 1,
+      "skipped_existing": 4,
+      "failed": 0,
+      "overwrite_existing": false,
+      "split": "val",
+      "val_split": 0.05,
+      "batch_size": 32,
+      "num_workers": 10,
+      "normalize": "rows",
+      "top_k_classes": 40,
+      "failures": [],
+      "runs": [
+        {
+          "checkpoint_path": "C:\\Users\\Lanxe\\OneDrive\\Master MINDS M1\\Machine Learning Computer Vision\\ms-coco\\trained_models\\convnext_tiny_20260301-134646\\best_model.pt",
+          "output_path": "C:\\Users\\Lanxe\\OneDrive\\Master MINDS M1\\Machine Learning Computer Vision\\ms-coco\\trained_models\\convnext_tiny_20260301-134646\\confusion_matrix.png",
+          "model_name": "convnext_tiny",
+          "generated": false,
+          "skipped_existing": true,
+          "error": null
+        },
+        {
+          "checkpoint_path": "C:\\Users\\Lanxe\\OneDrive\\Master MINDS M1\\Machine Learning Computer Vision\\ms-coco\\trained_models\\convnext_tiny_20260301-194510\\best_model.pt",
+          "output_path": "C:\\Users\\Lanxe\\OneDrive\\Master MINDS M1\\Machine Learning Computer Vision\\ms-coco\\trained_models\\convnext_tiny_20260301-194510\\confusion_matrix.png",
+          "model_name": "convnext_tiny",
+          "generated": true,
+          "skipped_existing": false,
+          "error": null
+        },
+        {
+          "checkpoint_path": "C:\\Users\\Lanxe\\OneDrive\\Master MINDS M1\\Machine Learning Computer Vision\\ms-coco\\trained_models\\mobilenet_v3_large_20260301-164829\\best_model.pt",
+          "output_path": "C:\\Users\\Lanxe\\OneDrive\\Master MINDS M1\\Machine Learning Computer Vision\\ms-coco\\trained_models\\mobilenet_v3_large_20260301-164829\\confusion_matrix.png",
+          "model_name": "mobilenet_v3_large",
+          "generated": false,
+          "skipped_existing": true,
+          "error": null
+        },
+        {
+          "checkpoint_path": "C:\\Users\\Lanxe\\OneDrive\\Master MINDS M1\\Machine Learning Computer Vision\\ms-coco\\trained_models\\regnet_y_800mf_20260301-161704\\best_model.pt",
+          "output_path": "C:\\Users\\Lanxe\\OneDrive\\Master MINDS M1\\Machine Learning Computer Vision\\ms-coco\\trained_models\\regnet_y_800mf_20260301-161704\\confusion_matrix.png",
+          "model_name": "regnet_y_800mf",
+          "generated": false,
+          "skipped_existing": true,
+          "error": null
+        },
+        {
+          "checkpoint_path": "C:\\Users\\Lanxe\\OneDrive\\Master MINDS M1\\Machine Learning Computer Vision\\ms-coco\\trained_models\\swin_v2_t_20260301-144143\\best_model.pt",
+          "output_path": "C:\\Users\\Lanxe\\OneDrive\\Master MINDS M1\\Machine Learning Computer Vision\\ms-coco\\trained_models\\swin_v2_t_20260301-144143\\confusion_matrix.png",
+          "model_name": "swin_v2_t",
+          "generated": false,
+          "skipped_existing": true,
+          "error": null
+        }
+      ]
+    },
+    "confusion_matrix_summary": {
+      "checkpoint_path": "C:\\Users\\Lanxe\\OneDrive\\Master MINDS M1\\Machine Learning Computer Vision\\ms-coco\\trained_models\\convnext_tiny_20260301-194510\\best_model.pt",
+      "output_path": "C:\\Users\\Lanxe\\OneDrive\\Master MINDS M1\\Machine Learning Computer Vision\\ms-coco\\trained_models\\convnext_tiny_20260301-194510\\confusion_matrix.png",
+      "model_name": "convnext_tiny",
+      "generated": true,
+      "skipped_existing": false,
+      "error": null
+    },
+    "confusion_matrix_error": null,
+    "tensorboard_log_dir": "C:\\Users\\Lanxe\\OneDrive\\Master MINDS M1\\Machine Learning Computer Vision\\ms-coco\\trained_models\\tensorboard_runs\\convnext_tiny\\e14_bs32-16_ga1-1_frz1_ufep5_ufnall_lrd0p000010-0p000100_vs0p050_sd42_amp1_20260301-194510"
+  }
+}
